@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite seu nome: ");
+		String primeiroNome;
+		primeiroNome = sc.next();
+
+		System.out.println("Digite sua idade: ");
+		int primeiraIdade = Integer.parseInt(sc.next());
+	}
+	
+}

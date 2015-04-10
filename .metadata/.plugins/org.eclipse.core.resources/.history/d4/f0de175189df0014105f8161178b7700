@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite seu nome: ");
+		String primeiroNome = sc.next();
+
+		System.out.println("Digite sua idade: ");
+		int primeiraIdade = sc.nextInt();
+		
+		System.out.println("Digite seu nome: ");
+		String segundoNome = sc.next();
+		
+		System.out.println("Digite sua idade: ");
+		int segundaIdade = sc.nextInt();
+		
+		if (primeiraIdade > segundaIdade) {
+			System.out.println("A pessoa mais velha é: " + primeiroNome + 
+					" com " + primeiraIdade + " anos.");
+		}
+		
+		
+	}
+	
+}
