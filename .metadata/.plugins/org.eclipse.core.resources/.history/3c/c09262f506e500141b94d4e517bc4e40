@@ -1,0 +1,14 @@
+package aula4;
+
+public class SuperMercado {
+	
+	Produto[] listaDeProdutos; 
+
+	public boolean cadastrarProduto(Produto produto) {
+		return false;
+	}
+	
+	public int getQuantidadeDeProdutos() {
+		return 0;
+	}
+}

@@ -1,0 +1,23 @@
+package aula4;
+
+public class SuperMercado {
+	
+	private Produto[] listaDeProdutos;
+	private int indexDoProdutoAtual = 0;
+	
+	
+	public SuperMercado() {
+		listaDeProdutos = new Produto[2];
+	}
+
+	public boolean cadastrarProduto(Produto produto) {
+		
+		this.listaDeProdutos[indexDoProdutoAtual] = produto;
+		indexDoProdutoAtual++;
+		return true;
+	}
+	
+	public int getQuantidadeDeProdutos() {
+		return indexDoProdutoAtual;
+	}
+}
