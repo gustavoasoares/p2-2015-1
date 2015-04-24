@@ -1,8 +1,0 @@
-package aula4;
-
-public class SuperMercado {
-
-	public int getQuantidadeDeProdutos() {
-		return 0;
-	}
-}
