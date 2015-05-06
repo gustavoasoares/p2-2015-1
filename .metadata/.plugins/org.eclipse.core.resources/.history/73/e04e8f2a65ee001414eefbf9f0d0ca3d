@@ -1,0 +1,48 @@
+package facebook.ui;
+
+import java.util.Scanner;
+
+public class TelaDoFacebook {
+	
+	private static final int CADASTRAR = 1;
+	private static final int SAIR = 3;
+	private static final String QUEBRA_DE_LINHA = System.getProperty("line.separator");
+
+	public static void main(String[] args) {
+		TelaDoFacebook tela = new TelaDoFacebook();
+		tela.exibeTelaInicial();
+	}
+
+	private void exibeTelaInicial() {
+		Scanner sc = new Scanner(System.in);
+		extracted();
+		int opcao;
+		do {
+			System.out.println("Digite uma opção");
+			System.out.println("1 - Cadastrar usuário" + QUEBRA_DE_LINHA
+					+ "2 - Fazer login" + QUEBRA_DE_LINHA + "3 - Sair do programa");
+			opcao = sc.nextInt();	
+			
+			switch (opcao) {
+			case CADASTRAR:
+				exibeTelaDeCadastroDoUsuario(sc);
+				break;
+
+			default:
+				break;
+			}
+		} while (opcao != SAIR);
+		
+		
+	}
+
+	private void extracted() {
+		System.out.println("Bem vindo ao Facebook versão 0.00001 alpha");
+	}
+
+	private void exibeTelaDeCadastroDoUsuario(Scanner sc) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

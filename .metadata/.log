@@ -1,0 +1,26 @@
+!SESSION 2015-04-29 07:46:36.708 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-29 08:32:02.999
+!MESSAGE Can't handle %s as parent of completion location.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-29 08:38:01.372
+!MESSAGE Can't handle %s as parent of completion location.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-29 08:39:18.917
+!MESSAGE Can't handle %s as parent of completion location.
+!SESSION 2015-05-06 08:18:08.862 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-06 09:21:40.289
+!MESSAGE Can't handle %s as parent of completion location.

@@ -1,0 +1,18 @@
+package facebook.ui;
+
+public class TelaDoFacebook {
+
+	
+	
+	public static void main(String[] args) {
+		TelaDoFacebook tela = new TelaDoFacebook();
+		tela.exibeTelaInicial();
+	}
+
+	private void exibeTelaInicial() {
+		
+		System.out.println("Bem vindo ao Facebook versão 0.00001 alpha");
+		
+	}
+
+}

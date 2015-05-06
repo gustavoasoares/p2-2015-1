@@ -22,11 +22,15 @@ public class Conta {
 		return saldo;
 	}
 	
-	public void depositar(double valor) {
+	public void depositar(double valor) throws Exception {
+		if (valor <= 0)
+			throw new Exception("O valor do deposito tem que ser positivo");
 		this.saldo += valor;
 	}
 	
-	public void sacar(double valor) {
+	public void sacar(double valor) throws Exception {
+		if (valor > saldo)
+			throw new Exception("Saldo insuficiente");
 		this.saldo -= valor;
 	}
 }

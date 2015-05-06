@@ -1,0 +1,4 @@
+1430912679389	Copy compilation unit
+1430912781431	Rename local variable 'nomesDuplicados'
+1430912790411	Rename local variable 'nomesDistintos'
+1430914865037	Extract local variable 'string'

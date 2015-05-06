@@ -1,0 +1,20 @@
+package facebook.ui;
+
+public class TelaDoFacebook {
+	
+	private static final String QUEBRA_DE_LINHA = System.getProperty("line.separator");
+
+	public static void main(String[] args) {
+		TelaDoFacebook tela = new TelaDoFacebook();
+		tela.exibeTelaInicial();
+	}
+
+	private void exibeTelaInicial() {
+		
+		System.out.println("Bem vindo ao Facebook versão 0.00001 alpha");
+		System.out.println("Digite uma opção");
+		System.out.println("1 - Cadastrar usuário" + QUEBRA_DE_LINHA
+				+ "2 - Fazer login" + QUEBRA_DE_LINHA + "3 - Sair do programa");
+	}
+
+}

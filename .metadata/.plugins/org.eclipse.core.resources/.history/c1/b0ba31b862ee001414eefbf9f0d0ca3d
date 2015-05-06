@@ -1,0 +1,10 @@
+package facebook.ui;
+
+public class TelaDoFacebook {
+	
+	public static void main(String[] args) {
+		TelaDoFacebook tela = new TelaDoFacebook();
+		tela.exibeTelaInicial();
+	}
+
+}

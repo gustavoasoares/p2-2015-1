@@ -1,0 +1,21 @@
+import java.util.HashMap;
+
+
+public class FrequenciaDeNomes {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, Integer> frequenciaDeNomes = new HashMap<String, Integer>();
+		
+		for (int i = 0; i < args.length; i++) {
+			String string = args[i];
+			if (frequenciaDeNomes.get(string) == null) {
+				frequenciaDeNomes.put(string, 1);
+			} else {
+				frequenciaDeNomes.put(string, frequenciaDeNomes.get(string) + 1);
+			}
+		}
+		
+		System.out.println(frequenciaDeNomes);
+	}
+}

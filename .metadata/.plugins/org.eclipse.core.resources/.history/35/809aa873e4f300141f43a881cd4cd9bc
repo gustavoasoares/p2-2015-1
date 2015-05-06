@@ -1,0 +1,17 @@
+import java.util.HashSet;
+
+
+public class Duplicados {
+	
+	public static void main(String[] args) {
+		
+		HashSet<String> nomesDistintos = new HashSet<String>();
+		
+		for (int i = 0; i < args.length; i++) {
+			nomesDistintos.add(args[i]);
+		}
+		
+		System.out.println(nomes);
+	}
+
+}

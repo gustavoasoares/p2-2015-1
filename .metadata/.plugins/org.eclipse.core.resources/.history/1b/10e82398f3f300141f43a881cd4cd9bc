@@ -1,0 +1,26 @@
+package facebook;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import facebook.core.Facebook;
+import facebook.core.Usuario;
+
+public class FacebookTest {
+
+	@Test(expected = Exception.class)
+	public void testCadastraUsuario() throws Exception {
+		Facebook face = new Facebook();
+
+		Usuario usuarioEsperado = new Usuario("Bianca",
+				"bianca@ccc.ufcg.edu.br", "12345");
+
+		face.cadastraUsuario("Bianca", "bianca@ccc.ufcg.edu.br", "12345");
+
+		assertTrue(face.usuarioExiste(usuarioEsperado));
+		face.cadastraUsuario("Bianca", "bianca@ccc.ufcg.edu.br", "12345");
+
+	}
+
+}

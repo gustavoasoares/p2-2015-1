@@ -1,0 +1,67 @@
+package facebook.ui;
+
+import java.security.PublicKey;
+import java.util.Scanner;
+
+import facebook.core.Facebook;
+
+public class TelaDoFacebook {
+	
+	private static final int CADASTRAR = 1;
+	private static final int SAIR = 3;
+	private static final String QUEBRA_DE_LINHA = System.getProperty("line.separator");
+	
+	private Facebook face;
+	
+	public TelaDoFacebook() {
+		face = new Facebook();
+	}
+
+	public static void main(String[] args) {
+		TelaDoFacebook tela = new TelaDoFacebook();
+		tela.exibeTelaInicial();
+	}
+
+	private void exibeTelaInicial() {
+		Scanner sc = new Scanner(System.in);
+		exibeMensagemDeBoasVindas();
+		int opcao;
+		do {
+			exibeMenuDeOpcoesIniciais();
+			opcao = sc.nextInt();	
+			sc.nextLine();
+			switch (opcao) {
+			case CADASTRAR:
+				exibeTelaDeCadastroDoUsuario(sc);
+				break;
+
+			default:
+				break;
+			}
+		} while (opcao != SAIR);
+	}
+
+	private void exibeMenuDeOpcoesIniciais() {
+		System.out.println("Digite uma opção");
+		System.out.println("1 - Cadastrar usuário" + QUEBRA_DE_LINHA
+				+ "2 - Fazer login" + QUEBRA_DE_LINHA + "3 - Sair do programa");
+	}
+
+	private void exibeMensagemDeBoasVindas() {
+		System.out.println("Bem vindo ao Facebook versão 0.00001 alpha");
+	}
+
+	private void exibeTelaDeCadastroDoUsuario(Scanner sc) {
+		System.out.println("Digite o nome do usuário: ");
+		String nome = sc.nextLine();
+		System.out.println("Digite o email do usuário: ");
+		String email = sc.nextLine();
+		System.out.println("Digite a senha do usuário");
+		String senha = sc.nextLine();		try {
+			face.cadastraUsuario(nome, email, senha);
+			System.out.println("Cadastro realizado com sucesso");	
+		
+		
+	}
+
+}
