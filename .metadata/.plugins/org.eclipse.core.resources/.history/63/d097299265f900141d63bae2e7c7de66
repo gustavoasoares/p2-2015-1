@@ -1,0 +1,26 @@
+package aulaHeranca;
+
+import static org.junit.Assert.*;
+
+import java.util.HashSet;
+
+import org.junit.Test;
+
+public class FuncionarioTest {
+
+	@Test
+	public void testConstrutor() {
+		Funcionario programador = new Funcionario("Matteus","Programador","Java");
+		assertEquals("Matteus", programador.getNome());
+		assertEquals("Programador", programador.getCargo());
+		assertEquals("Java",programador.getLinguagem());
+	}
+	
+	@Test(expected = Exception.class)
+	public void testConstrutorInvalido() {
+		Funcionario programador = new Funcionario(null,"Programador","Java");
+	}
+	
+
+	
+}

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="FacebookTest" project="facebook" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="facebook.FacebookTest" time="0.015">
-    <testcase name="testRemoveUsuario" classname="facebook.FacebookTest" time="0.0"/>
-    <testcase name="testCadastraUsuarioDuplicado" classname="facebook.FacebookTest" time="0.015"/>
-  </testsuite>
-</testrun>

@@ -1,0 +1,5 @@
+package aulaHeranca;
+
+public class Gerente extends Funcionario {
+
+}

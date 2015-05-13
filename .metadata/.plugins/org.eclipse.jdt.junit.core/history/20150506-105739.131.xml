@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ContaTest" project="aula3" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="aula3.ContaTest" time="0.0">
-    <testcase name="testSacar" classname="aula3.ContaTest" time="0.0"/>
-    <testcase name="testSacarSaldoInsuficiente" classname="aula3.ContaTest" time="0.0"/>
-    <testcase name="testDepositar" classname="aula3.ContaTest" time="0.0"/>
-  </testsuite>
-</testrun>

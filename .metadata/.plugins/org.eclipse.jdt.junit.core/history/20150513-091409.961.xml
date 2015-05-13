@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FuncionarioTest" project="aulaHeranca" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="aulaHeranca.FuncionarioTest" time="0.0">
+    <testcase name="testConstrutorInvalido" classname="aulaHeranca.FuncionarioTest" time="0.0"/>
+    <testcase name="testGerente" classname="aulaHeranca.FuncionarioTest" time="0.0"/>
+    <testcase name="testProgramador" classname="aulaHeranca.FuncionarioTest" time="0.0"/>
+  </testsuite>
+</testrun>

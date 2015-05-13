@@ -1,0 +1,35 @@
+package aulaHeranca;
+
+
+public class Funcionario {
+
+	private String nome;	
+	private final double salarioBaseGerente = 5000;
+	private final double salarioBaseProgramador = 1200;
+	private final double bonusPorProjeto = 2000;
+	
+	public Funcionario(String nome) throws Exception {
+		if (nome == null || nome.equals("")) 
+			throw new Exception("Nome inválido");
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+
+	public double calculaSalario() {
+		if (cargo.equals(Cargo.Gerente)) {
+			return salarioBaseGerente + numeroDeProjetos * bonusPorProjeto;	
+		} else {
+			if (linguagem.equals(Linguagem.Java)) {
+				return salarioBaseProgramador * 1.5;
+			} else {
+				return salarioBaseProgramador * 1;
+			}
+		}
+		
+	}
+}
+

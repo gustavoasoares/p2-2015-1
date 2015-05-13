@@ -1,0 +1,12 @@
+package aulaHeranca;
+
+public class Gerente extends Funcionario {
+	
+	private int numeroDeProjetos;
+	
+	public int getNumeroDeProjetos() {
+		return numeroDeProjetos;
+	}
+
+
+}

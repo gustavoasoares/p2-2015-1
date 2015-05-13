@@ -1,0 +1,8 @@
+package aulaHeranca;
+
+
+public class Programador extends Funcionario {
+	
+	private Linguagem linguagem;
+
+}

@@ -1,0 +1,52 @@
+package aulaHeranca;
+
+import static org.junit.Assert.*;
+
+import java.util.HashSet;
+
+import org.junit.Test;
+
+import aulaHeranca.Funcionario.Linguagem;
+
+public class FuncionarioTest {
+
+	@Test
+	public void testProgramador() throws Exception {
+		Funcionario programador = new Funcionario("Matteus",Funcionario.Cargo.Programador,Funcionario.Linguagem.Java);
+		assertEquals("Matteus", programador.getNome());
+		assertEquals("Programador", programador.getCargo());
+		assertEquals("Java",programador.getLinguagem());
+		
+		assertEquals(1800, programador.calculaSalario(),0);
+	}
+	
+	@Test(expected = Exception.class)
+	public void testConstrutorInvalido() throws Exception {
+		Funcionario programador = new Funcionario("",Funcionario.Cargo.Programador,Funcionario.Linguagem.Java);
+	}
+	
+	@Test
+	public void testGerente() {
+		int numeroDeProjetos = 2;
+		Funcionario gerente = new Funcionario("Bianca",Funcionario.Cargo.Gerente,numeroDeProjetos);
+		assertEquals("Bianca", gerente.getNome());
+		assertEquals(Funcionario.Cargo.Gerente, gerente.getCargo());
+		assertEquals(2, gerente.getNumeroDeProjetos());
+		
+		assertEquals(9000.0, gerente.calculaSalario(),0);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+}

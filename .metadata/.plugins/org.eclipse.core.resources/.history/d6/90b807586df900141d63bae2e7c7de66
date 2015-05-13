@@ -1,0 +1,13 @@
+package aulaHeranca;
+
+public class Gerente extends Funcionario {
+	
+	private int numeroDeProjetos;
+	private final double bonusPorProjeto = 2000;
+
+	public int getNumeroDeProjetos() {
+		return numeroDeProjetos;
+	}
+
+
+}
