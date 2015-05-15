@@ -13,13 +13,17 @@ public class FolhaDePagamento {
 	}
 
 	public String geraExtratoDaFolha() {
-		String resultado = "Extrato da folha de pagamento" ;
-		for (Funcionario funcionario : listaDeFuncionarios) {
-			resultado += QUEBRA_DE_LINHA + funcionario.getNome() + ": R$ " +
-					funcionario.calculaSalario();
-		}
 		
-		return resultado;
+		StringBuilder sb = new StringBuilder();
+		System.out.println("Isso é um teste");
+		sb.append("Extrato da folha de pagamento");
+		for (Funcionario funcionario : listaDeFuncionarios) {
+			sb.append(QUEBRA_DE_LINHA);
+			sb.append(funcionario.getNome()); 
+			sb.append(": R$ ");
+			sb.append(funcionario.calculaSalario());
+		}
+		return sb.toString();
 	}
 
 }

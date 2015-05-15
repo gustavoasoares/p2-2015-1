@@ -24,3 +24,19 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-06 09:21:40.289
 !MESSAGE Can't handle %s as parent of completion location.
+!SESSION 2015-05-15 10:21:58.579 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-05-15 10:23:10.994
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-15 10:56:18.611
+!MESSAGE Can't handle %s as parent of completion location.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-15 10:58:54.654
+!MESSAGE Failed to resolve selection in '=aulaHeranca/src<aulaHeranca{FolhaDePagamento.java' at offset 310

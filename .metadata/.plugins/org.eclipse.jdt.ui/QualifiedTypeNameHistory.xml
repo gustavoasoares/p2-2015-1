@@ -15,4 +15,11 @@
 <fullyQualifiedTypeName name="aula3.core.oo.Conta"/>
 <fullyQualifiedTypeName name="aula3.core.oo.Cliente"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="aulaHeranca.Gerente"/>
+<fullyQualifiedTypeName name="aulaHeranca.Programador"/>
+<fullyQualifiedTypeName name="aulaHeranca.Programador.Linguagem"/>
+<fullyQualifiedTypeName name="aulaHeranca.FolhaDePagamento"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>
