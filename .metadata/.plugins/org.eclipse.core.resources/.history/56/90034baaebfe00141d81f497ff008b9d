@@ -1,0 +1,13 @@
+package core;
+
+public class Tarefa {
+
+	private String nome;
+	private int tempo;
+
+	public Tarefa(String nome, int tempo) {
+		this.nome = nome;
+		this.tempo = tempo;
+	}
+
+}

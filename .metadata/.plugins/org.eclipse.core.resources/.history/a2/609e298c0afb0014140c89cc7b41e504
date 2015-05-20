@@ -1,0 +1,13 @@
+package aulaHeranca;
+
+import java.util.ArrayList;
+
+public class FolhaDePagamento {
+
+	private ArrayList<Funcionario> listaDeFuncionarios;
+
+	public FolhaDePagamento(ArrayList<Funcionario> listaDeFuncionarios) {
+		this.listaDeFuncionarios = listaDeFuncionarios;
+	}
+
+}

@@ -40,3 +40,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-15 10:58:54.654
 !MESSAGE Failed to resolve selection in '=aulaHeranca/src<aulaHeranca{FolhaDePagamento.java' at offset 310
+!SESSION 2015-05-20 08:13:07.206 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-20 09:13:26.975
+!MESSAGE Can't handle %s as parent of completion location.

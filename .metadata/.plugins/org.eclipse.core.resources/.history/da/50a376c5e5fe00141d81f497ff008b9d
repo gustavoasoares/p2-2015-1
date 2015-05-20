@@ -1,0 +1,41 @@
+package ui;
+
+import java.util.Scanner;
+
+public class TelaGerenciadorDeTarefas {
+	
+	private static final int SAIR = 3;
+
+	public void exibeMenuPrincipal() {
+		Scanner sc = new Scanner(System.in);
+		int opcao;
+		do {
+			opcao = sc.nextInt();
+			System.out.println("Bem vindo. Selecione uma opção:");
+			System.out.println("1. Fazer login");
+			System.out.println("2. Cadastrar usuário");
+			System.out.println("3. Sair");
+		} while (opcao != SAIR);
+	}
+	
+	public void exibeMenuDoUsuario() {
+		
+	}
+	
+	public void exibeTelaDeCadastroDoUsuario() {
+		
+	}
+	
+	public void exibeTelaDeCadastroDeTarefas() {
+		
+	}
+	
+	public void exibeTarefas() {
+		
+	}
+	
+	public void exibeTelaDeLogin() {
+		
+	}
+
+}

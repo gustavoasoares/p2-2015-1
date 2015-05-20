@@ -1,0 +1,28 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import core.Usuario;
+
+public class GerenciadorDeTarefas {
+
+	private List<Usuario> usuarios;
+	
+	public GerenciadorDeTarefas() {
+		usuarios = new ArrayList<Usuario>();
+	}
+	public Usuario login(String nome, String senha) throws Exception {
+		for (Usuario usuario : usuarios) {
+			if (usuario.getNome().equals(nome)) {
+				if (usuario.getSenha().equals(senha)) {
+					return usuario;
+				} else {
+					throw new Exception("Senha do usuário está incorreta");
+				}
+			}
+		}
+		throw new Exception("Usuário não existe");
+	}
+
+}
