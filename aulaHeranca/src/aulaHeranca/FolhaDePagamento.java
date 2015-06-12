@@ -1,6 +1,9 @@
 package aulaHeranca;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import aulaHeranca.Programador.Linguagem;
 
 public class FolhaDePagamento {
 	
@@ -24,6 +27,20 @@ public class FolhaDePagamento {
 			sb.append(funcionario.calculaSalario());
 		}
 		return sb.toString();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		
+		List<Funcionario> listaDeFuncionarios = 
+				new ArrayList<Funcionario>();
+		
+		Gerente gerente = new Gerente("Gustavo", 3);
+		Programador programador = 
+				new Programador("Ana", Linguagem.Python);
+		
+		listaDeFuncionarios.add(gerente);
+		listaDeFuncionarios.add(programador);
+
 	}
 
 }

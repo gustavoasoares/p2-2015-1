@@ -1,6 +1,6 @@
 package aulaHeranca;
 
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioAutenticavel {
 	
 	private int numeroDeProjetos;
 	private final double bonusPorProjeto = 2000;
@@ -19,6 +19,5 @@ public class Gerente extends Funcionario {
 	public double calculaSalario() {
 		return salarioBase + numeroDeProjetos * bonusPorProjeto;
 	}
-
 
 }
