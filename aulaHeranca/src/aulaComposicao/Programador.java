@@ -2,7 +2,7 @@ package aulaComposicao;
 
 
 
-public class Programador extends Cargo {
+public class Programador extends Cargo implements Autenticavel {
 	
 	private Linguagem linguagem;
 
@@ -26,5 +26,11 @@ public class Programador extends Cargo {
 
 	enum Linguagem {
 		Java, Python
+	}
+
+	@Override
+	public void autentica(String senha) {
+		// TODO Auto-generated method stub
+		
 	}
 }
