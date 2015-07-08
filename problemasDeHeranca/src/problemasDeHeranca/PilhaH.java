@@ -8,20 +8,19 @@ public class PilhaH<E> extends ArrayList<E>{
 		add(e);
 	}
 	
-	public boolean pop() {
+	public E pop() {
 		if (isEmpty())
-			return false; 
+			return null; 
+		E e = this.get(size()-1);
 		remove(size()-1);
-		return true;
+		return e;
 	}
 	
 	public static void main(String[] args) {
 		PilhaH<String> pilha = new PilhaH<String>();
 		pilha.push("{");
 		pilha.push("}");
-		pilha.pop();
-		pilha.remove(1);
-		System.out.println(pilha);
+		System.out.println(pilha.pop());
 		
 	}
 
