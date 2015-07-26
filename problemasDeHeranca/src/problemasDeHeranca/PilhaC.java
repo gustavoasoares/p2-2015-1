@@ -19,11 +19,17 @@ public class PilhaC<E> {
 		return lista.size();
 	}
 	
-	public boolean pop() {
+	public E pop() {
 		if (lista.isEmpty())
-			return false; 
+			return null; 
+		E e = lista.get(size()-1);
 		lista.remove(lista.size()-1);
-		return true;
+		return e;
+	}
+	
+	@Override
+	public String toString() {
+		return lista.toString();
 	}
 	
 	public static void main(String[] args) {
@@ -31,6 +37,9 @@ public class PilhaC<E> {
 		pilha.push("{");
 		pilha.push("}");
 		pilha.pop();
-		System.out.println(pilha);
+		pilha.pop();
+		pilha.push("Matteus Sthefano");
+		System.out.println(pilha.pop());
+		System.out.println(pilha.size());
 	}
 }
