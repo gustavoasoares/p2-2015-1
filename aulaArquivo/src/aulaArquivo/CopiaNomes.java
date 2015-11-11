@@ -9,7 +9,7 @@ public class CopiaNomes {
 	public static void main(String[] args) throws IOException {
 		
 		FileInputStream in = new FileInputStream("nomes.txt");
-		FileOutputStream out = new FileOutputStream("nomes.txt");
+		FileOutputStream out = new FileOutputStream("copia.txt");
 		try {
 			int c;
 			while ((c = in.read()) != -1) {

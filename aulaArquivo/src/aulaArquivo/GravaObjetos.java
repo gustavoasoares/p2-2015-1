@@ -15,12 +15,13 @@ public class GravaObjetos {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 		List<Pessoa> lista = new ArrayList<>();
-		lista.add(new Pessoa("danilo"));
-		lista.add(new Pessoa("Daniel"));
-		lista.add(new Pessoa("Manoel"));
-		lista.add(new Pessoa("Rafael"));
-		lista.add(new Pessoa("Gustavo"));
-		lista.add(new Pessoa("Igor"));
+		Endereco endereco = new Endereco("Rua Epaminondas Macaxeira", "Jardim Tavares");
+		lista.add(new Pessoa("danilo", endereco));
+		lista.add(new Pessoa("Daniel", endereco));
+		lista.add(new Pessoa("Manoel", endereco));
+		lista.add(new Pessoa("Rafael", endereco));
+		lista.add(new Pessoa("Gustavo", endereco));
+		lista.add(new Pessoa("Igor", endereco));
 
 		ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("lista.dat")));
 		try {
