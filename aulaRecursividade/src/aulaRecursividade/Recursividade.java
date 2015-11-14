@@ -1,6 +1,10 @@
 package aulaRecursividade;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Recursividade {
 
@@ -33,8 +37,31 @@ public class Recursividade {
 		}
 	}
 	
+	public static void perm(List<Integer> solucao, List<Integer> elementos) {
+		if (solucao.size() == elementos.size()) {
+//			System.out.println(solucao);
+		}
+		else {
+			for (Integer x : elementos) {
+				if (valid(solucao, x)) {
+					solucao.add(x);
+					perm(solucao,elementos);
+					solucao.remove(x);
+				}
+			}
+		}
+	}
+	
+	private static boolean valid(List<Integer> solucao, Integer x) {
+		return !solucao.contains(x);
+	}
+
 	public static void main(String[] args) {
-		Recursividade.hanoi(64,"A","C","B");
-		System.out.println("Total de chamadas: " + Recursividade.i);
+//		Recursividade.hanoi(64,"A","C","B");
+//		System.out.println("Total de chamadas: " + Recursividade.i);
+		double start = System.currentTimeMillis(); 
+		Recursividade.perm(new ArrayList<>(), Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+		double stop = System.currentTimeMillis();
+		System.out.println((stop - start)/1000);
 	}
 }
