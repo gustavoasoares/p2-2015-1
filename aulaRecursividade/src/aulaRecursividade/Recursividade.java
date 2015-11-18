@@ -39,7 +39,7 @@ public class Recursividade {
 	
 	public static void perm(List<Integer> solucao, List<Integer> elementos) {
 		if (solucao.size() == elementos.size()) {
-//			System.out.println(solucao);
+			System.out.println(solucao);
 		}
 		else {
 			for (Integer x : elementos) {
@@ -55,13 +55,27 @@ public class Recursividade {
 	private static boolean valid(List<Integer> solucao, Integer x) {
 		return !solucao.contains(x);
 	}
+	
+	//questão 1 da lista
+	public static int soma(int[] array) {
+//		return somaRecursiva(array, array.length);
+		return somaRecursiva2(array, 0, array.length -1);
+	}
+
+	private static int somaRecursiva(int[] array, int i) {
+		if (i == 1)
+			return array[0];
+		return array[i-1] + somaRecursiva(array, i-1);
+	}
+	
+	private static int somaRecursiva2(int[] array, int l, int r) {
+		if (r == l)
+			return array[r]; 
+		int m = (r + l) / 2;
+		return somaRecursiva2(array, l, m) + somaRecursiva2(array, m+1, r);
+	}
 
 	public static void main(String[] args) {
-//		Recursividade.hanoi(64,"A","C","B");
-//		System.out.println("Total de chamadas: " + Recursividade.i);
-		double start = System.currentTimeMillis(); 
-		Recursividade.perm(new ArrayList<>(), Arrays.asList(1,2,3,4,5,6,7,8,9,10));
-		double stop = System.currentTimeMillis();
-		System.out.println((stop - start)/1000);
+		System.out.println(Recursividade.soma(new int[] {1,2,4,5,6,7}));
 	}
 }

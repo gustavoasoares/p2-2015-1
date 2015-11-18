@@ -16,6 +16,21 @@ public class BinaryTree {
 		// printPreOrder(root);
 		root.printPreOrder();
 	}
+	
+	private Node find(int key) {
+		return find(root, key);
+	}
+
+	private Node find(Node node, int key) {
+		if (node != null) {
+			if (key == node.getKey())
+				return node;
+			if (key < node.getKey())
+				return find(node.getLeft(),key);
+			return find(node.getRight(), key); 
+		}
+		return null;
+	}
 
 	private void printPreOrder(Node node) {
 		System.out.print(node.getKey() + " ");
